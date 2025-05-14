@@ -73,50 +73,6 @@ python ascii_webcam.py --width 120 --height 80 --theme fire
 
 To exit the application, simply press the `q` key while the webcam viewer is running.
 
----
-
-## 💻 OS-Specific Installation Notes
-
- ### 🔴 Red Hat Enterprise Linux (RHEL), Fedora, CentOS
-
-Install Python 3, pip, OpenCV dependencies, and ncurses development libraries:
-
-```bash
-sudo dnf install python3 python3-pip ncurses ncurses-devel gcc-c++ redhat-rpm-config
-pip3 install opencv-python
-
-### 🟢 Ubuntu / Debian
-
-Install Python, pip, and necessary dependencies:
-
-```bash
-sudo apt update
-sudo apt install python3 python3-pip libncurses5-dev libncursesw5-dev build-essential
-pip3 install opencv-python
-```
-
-### 🪟 Windows
-
-Python on Windows does **not** include the `curses` module by default.
-
-> ⚠️ **Recommended:** Use [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install) for the best experience.
-
-#### Option A: WSL (Recommended)
-
-Inside your WSL environment (Ubuntu is a popular choice):
-
-```bash
-sudo apt update
-sudo apt install python3 python3-pip libncurses5-dev libncursesw5-dev
-pip3 install opencv-python
-```
-
-#### Option B: Native Windows (Not supported yet)
-
-Native Windows support for curses-based rendering is currently unavailable. A future update *may* include a non-curses rendering mode.
-
----
-
 ## 📄 License
 
 This project is licensed under the MIT License.
